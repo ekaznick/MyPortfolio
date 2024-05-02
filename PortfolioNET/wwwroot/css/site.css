@@ -8,6 +8,11 @@ html {
   }
 }
 
+body, h1, h2, h3, h4, p, a {
+    font-family: 'Arial', sans-serif; /* Example: Arial, but choose what fits your design */
+    color: #E5E4E2;
+}
+
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
@@ -18,7 +23,9 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #002244;
+    color: #E5E4E2; 
 }
 
 img {
@@ -38,9 +45,72 @@ img {
 }
 
 .homeDiv {
-    margin: 20px; 
-    padding: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    list-style-type: none; /* Removes default list styling */
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    animation: fadeIn 2s; 
+    animation: fadeIn 2s;
+}
+
+.homeDiv li {
+    padding: 8px; /* Adds some spacing around items */
+    font-size: 16px; /* Sets a uniform font size */
+    align-items: center; /* Aligns icons with text */
+    display: flex; /* Enables flexible box layout */
+}
+
+.homeDiv i {
+    width: 30px; /* Gives a fixed width for icons */
+    font-size: 20px; /* Larger size for icons */
+    color: #E5E4E2; /* Teal color for icons */
+}
+
+.button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #E5E4E2; /* Platinum */
+    color: #003366; /* Navy Blue for text on hover */
+}
+
+/* PortfolioNET.styles.css */
+.navbar {
+    background-color: #003366; /* Navy Blue */
+    color: #ffffff; /* White */
+}
+
+.nav-link {
+    color: #ffffff; /* White */
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #ff6b6b; /* Coral for hover effect */
+}
+
+.navbar-brand {
+    color: #ffffff; /* White */
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #f4f4f8; /* Soft Gray */
+    color: #003366; /* Navy Blue text */
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #007d8c; /* Teal */
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #ff6b6b; /* Coral */
 }
